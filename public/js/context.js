@@ -2,9 +2,13 @@ function createFunction(){
     var arr = [];
     var number = 1;
 
-    arr.push( function(){
-        console.log(number);
-    } );
+    arr.push( 
+        (function(number){
+            return function(){
+                console.log(number);
+            }
+        })(number) // create a new context
+    );
 
     number = 2;
     
