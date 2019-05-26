@@ -9,3 +9,10 @@ console.log(a.toLowerCase())
 
 console.log(a.indexOf("f"))
 console.log(a.lastIndexOf("e"))
+
+var name = a.substr(0, a.indexOf(" "));
+console.log('name:', name);
+
+var splited = a.split(" ");
+console.log('splited:', splited);
+
